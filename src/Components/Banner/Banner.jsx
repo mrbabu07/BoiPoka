@@ -1,18 +1,26 @@
-import React from 'react';
-import bookImg from '/books.jpg'
+import React from "react";
+import bookImg from "/books.jpg";
 
 const Banner = () => {
-    return (
-        <div className='flex justify-around items-center p-16 w-full'>
-            <div>
-                <h1>consectetur adipisicing elit.<br/> Placeat animi iure tempora laboriosam fugit consectetur quas provident est quaerat dolor.</h1>
-                <button className='btn btn-primary'>test test</button>
-            </div>
-            <div>
-                <img src={bookImg} alt="" />
-            </div>
+  return (
+    <div className="hero bg-base-200 min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <img
+          src={bookImg}
+          className="max-w-sm rounded-lg shadow-2xl"
+        />
+        <div>
+          <h1 className="text-5xl font-bold">Box Office News!</h1>
+          <p className="py-6">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+          <button className="btn btn-primary">Get Started</button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Banner;
